@@ -1,0 +1,323 @@
+@import "about.css";
+@import "contact.css";
+@import "signup.css";
+/* @media(max-width: 1600px){ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../Images/hacker-man.gif);
+  min-height: 100vh;
+  background-size: 94%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgb(10, 10, 10);
+  backdrop-filter: blur(10px);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*header start*/
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  font-size: 100%;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(45px);
+  z-index: 999;
+}
+
+header ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header li {
+  height: 50px;
+}
+header a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header a:hover {
+  background-color: rgb(29, 27, 27);
+}
+header li:first-child {
+  margin-right: auto;
+  margin-left: 35px;
+  pointer-events: none;
+}
+
+/* header end */
+
+/* sidebar start */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+
+/* sidebar end */
+
+.entirecontainer {
+  /* border: #ff32d6 2px solid; */
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 0px 20px 30px rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
+}
+
+.main {
+  /* border: 2px solid yellow; */
+  animation: fadeIn 3s ease-in;
+  background-image: url(../Images/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 60px;
+  box-shadow: -5px 10px 20px 20px rgba(11, 65, 106, 0.8);
+  color: white;
+  font-weight: 800;
+}
+
+#homecontainer {
+  /* border: 1px solid blue; */
+  margin: auto;
+    background: rgba(0, 0, 0, 0.6);
+}
+#homecontainer .para {
+  /* border: red 2px solid; */
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  padding: 5%;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
+.main h1 {
+  /* border: #0066ff 2px solid; */
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+  padding-top: 5%;
+  padding-left: 5%;
+  margin: auto;
+  font-size: 350%;
+  background: linear-gradient(#0066ff, #ff32d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  backdrop-filter: blur(2px);
+}
+/* form start */
+#signinform {
+  /* border: 2px solid rgb(0, 255, 110); */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22em;
+  height: 400px;
+  border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 0.8) 50%
+  );
+  box-shadow: 0px 0px 20px 5px rgba(238, 235, 235, 0.8);
+  color: white;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding-top: 1em;
+}
+#signinform input {
+  width: 260px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff32d6;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  font-family: sans-serif;
+}
+#signinform input:focus {
+  outline: none;
+}
+::placeholder {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+}
+.signupbtn {
+  background-color: black;
+  border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  border-width: 2px;
+  height: 40px;
+  width: 160px;
+  margin-left: 20px;
+  font-weight: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+.loginbut {
+  background-color: black;
+  border-image: linear-gradient(to right, #0066ff, #ff32d6) 1;
+  border-width: 2px;
+  height: 40px;
+  width: 200px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+.loginbut a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.loginbut:hover {
+  color: linear-gradient(to right, #0066ff, #ff32d6);
+  scale: 1.2;
+  background: url(../Images/matrix2.gif);
+}
+
+#signinform p {
+  color: white;
+}
+
+#signinform .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding-top: 20px;
+  text-align: center;
+}
+#signinform .link .a {
+  text-decoration: none;
+  color: #fff;
+}
+.loginwith {
+  padding-top: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.socialicons a {
+  text-decoration: none;
+  color: #fff;
+}
+.socialicons i {
+  color: #fff;
+  font-size: 30px;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 1%;
+  padding-bottom: 10%;
+}
+.socialicons i:hover {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  color: white;
+}
+footer i {
+  color: white;
+  padding-left: 20px;
+}
+
+
+/* media query */
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+  .sidebar {
+    width: 60%;
+  }
+
+  .main {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .entirecontainer {
+    width: 100%;
+    box-shadow: none;
+  }
+  #container {
+    width: 100%;
+  }
+  #homecontainer h1 {
+    font-size: 250%;
+    padding: 10px;
+    text-align: center;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+  }
+}

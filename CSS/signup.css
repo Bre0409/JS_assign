@@ -1,0 +1,127 @@
+
+#signupcontainer {
+  background-image: url(../Images/redman.jpg);
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 1%;
+  box-shadow: -5px 10px 20px 20px rgba(228, 80, 80, 0.8);
+}
+.signup {
+  /* border: 2px solid green; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+form {
+  width: min(400px, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+form > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form label {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(140, 141, 145);
+  fill: white;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+form input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid rgb(155, 173, 185);
+  border-left: none;
+  background-color: rgb(155, 173, 185);
+  transition: 150ms ease;
+}
+form input:hover {
+  border-color: black;
+}
+form input:focus {
+  outline: none;
+  border-color: white;
+}
+div:has(input:focus) > label {
+  background-color: white;
+}
+
+form button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 100px;
+  padding: 0.85em 2em;
+  background-color: #2a2f3b;
+  color: white;
+  font: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+form button:hover {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: rgb(235, 235, 239);
+}
+a:hover {
+  text-decoration: underline;
+}
+#errorContainer {
+  color: rgb(241, 14, 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  backdrop-filter: blur(100px);
+}
+form div.incorrect label {
+  background-color: rgb(247, 89, 89);
+}
+form div.incorrect input {
+  border-color: rgb(247, 89, 89);
+}
+#error-message {
+  color: rgb(247, 89, 89);
+}
+.signup p {
+  color: white;
+  padding: 2%;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 800px) {
+  #signupcontainer {
+    width: 100%;
+    box-shadow: none;
+  }
+}

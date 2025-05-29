@@ -1,0 +1,56 @@
+#aboutcontainer {
+  /* border: 4px yellow solid; */
+  background-image: url(../Images/pexels-sebastiaan9977-1097456.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  margin-top: 1%;
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: white;
+  box-shadow: -5px 10px 20px 20px rgba(146, 188, 227, 0.8);
+  animation: fadeIn 3s ease-in;
+  box-sizing: border-box;
+}
+.aboutcontent {
+  /* border: 3px solid grey; */
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+#aboutcontainer h1 {
+  padding-left: 5%;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.aboutcontent p {
+  padding: 5%;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 2px solid brown;
+}
+.aboutuspics {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  /* border: solid rgb(4, 0, 255); */
+  margin: auto;
+  padding-left: 4%;
+  width: 90%;
+}
+ 
+  img {
+    width:80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+
+
+        /* MEDIA QUERY */
+
+@media (max-width: 800px) {
+  #aboutcontainer {
+    width: 100%;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Noobie</title>
+    <link rel="stylesheet" href="..\CSS\home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="..\javascript\home.js" defer></script>
+    <script type="text/javascript" src="..\javascript\signup.js" defer></script>
+    <script type="text/javascript" src="..\javascript\contact.js" defer></script>
+    
+  </head>
+
+  <body>
+            <!-- header -->
+    <header>
+            <!-- side nav bar -->
+      <ul class="sidebar">
+        <li><a href="#"></a></li>
+        <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li onclick="closeSidebar()"><a href="home.html">Home</a></li>
+        <li onclick="closeSidebar()"><a href="#aboutcontainer">About</a></li>
+        <li onclick="closeSidebar()"><a href="#contactcontainer">Contact</a></li>
+        <li onclick="closeSidebar()"><a href="#signupcontainer" id="sidebar-signup-link">Sign up</a></li>
+
+      </ul>
+                  <!-- main nav bar -->
+                   <div id="navbar">
+      <ul>
+        <li><a href="Code Noobie">Code Noobie</a></li>
+        <li class="hideOnMobile"><a href="home.html">Home</a></li>
+        <li class="hideOnMobile"><a href="#aboutcontainer">About</a></li>
+        <li class="hideOnMobile"><a href="#contactcontainer">Contact</a></li>
+        <li class="hideOnMobile"><a href="#signupcontainer" id="main-signup-link">Sign up</a></li>
+         </div>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+     
+    </header>
+
+<div class="entirecontainer">
+
+    <div class="main">
+            <!-- Home Section -->
+      <div id="homecontainer">
+        <h1>
+          Web Design
+          
+          & <br>Computer
+          
+          Software Development
+        </h1>
+
+        <p class="para">
+          Never coded before?, you have looked through numerous videos on YouTube
+          only to be able to code a home page for a website but can't go
+          any further with adding more content and information.<br> You have
+          looked at endless coding and website develop websites only to find the
+          code
+          and jargon too complicated to understand. Then this website is for
+          you.<br>
+          Here we will teach you the basics of computer software development for
+          creating websites using 3 tools HTML, CSS & JAVASCRIPT and best
+          of all its free! Just sign up and then login in on the right side of
+          this page for access.
+        </p>
+
+          <!-- Login form -->
+
+         <div id="signinform">
+          
+        <input type="email" class="email" placeholder="Enter Email" />
+
+        <input type="password" class="password" placeholder="Enter Password" />
+        
+        <button class="loginbut" onclick="login()">Login</button>
+          
+        <div id="result"></div>
+        
+        <p class="link">
+          Don't have an account?
+          <br />
+          <a href="#signupform">Sign up here</a>
+        </p>
+        <p class="loginwith">Login in with</p>
+
+        <div class="socialicons">
+          <a href="facebook_link"><i class="fab fa-facebook"></i></a>
+          <a href="instagram_link"><i class="fab fa-instagram"></i></a>
+          <a href="twitter_link"><i class="fab fa-twitter"></i></a>
+          <a href="skype_link"><i class="fab fa-skype"></i></a>
+        </div>
+      </div>
+    </div>
+    
+       
+      </div> 
+      
+            <!-- About Section -->
+     
+     <div id="aboutcontainer">
+        <div class="aboutcontent">
+      <h1>About Us</h1>
+      <p>A group of passionate friends, all with backgrounds in web development and education, came together with a shared vision: to make learning how to code accessible, friendly, and fun for absolute beginners. Frustrated by the complexity and dryness of many traditional tutorials, they decided to build their own platform—an online space designed not just to teach the technical basics of HTML, CSS, and JavaScript, but also to foster creativity, confidence, and a sense of community among new learners. They spent countless evenings after work and weekends collaborating on everything from curriculum development to web design, aiming to strip away jargon and make every lesson feel like a conversation with a mentor rather than a lecture. The result was a vibrant, easy-to-navigate website filled with interactive tutorials, hands-on projects, and bite-sized lessons that gradually guide users from simple page structure in HTML to dynamic interactivity using JavaScript. Each friend brought a unique strength to the table—whether it was coding, design, writing, or community-building—and their combined efforts created not just a course, but a welcoming digital environment where learners could experiment, fail safely, ask questions, and grow. What started as a side project between friends quickly gained traction through word of mouth and social media, becoming a beloved resource for students, career-changers, and hobbyists alike, proving that with the right approach, learning to code could be engaging, empowering, and even a little fun.
+</p>
+    
+    <div class="aboutuspics">
+    <div class="picbox1">
+<img src="../Images/jimmy.jpg">
+</div>
+<div class="picbox2">
+  <img src="../Images/sarah.jpg">
+</div>
+<div class="picbox3">
+  <img src="../Images/Jon.jpg">
+</div>
+</div>
+</div>
+</div>
+
+            <!-- Contact Section -->
+
+
+  <div id="contactcontainer">
+          
+<div class="contactcontent">
+      <h1>Please Pick Your Query</h1>
+<p id="errormessage"></p>
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">Pick Query</span>
+            <div class="caret"></div>
+        </div>
+
+        <ul class="menu">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li class="active">CONTENT</li>
+          <li>CAREER</li>
+        </ul>
+          </div>
+
+  <form id="contact-form">
+    <input type="text" name="first-name" id="first-name-input" placeholder="Type first name here...">
+    <br>
+    <input type="email" name="email-input" id="email-contact" placeholder="Type email name here...">
+    <br>
+    <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..."></textarea>
+    <br>
+    <button id="submit" onclick="messages(event)">Submit</button>
+  </form>
+  <div class="contactmessage">
+    <div class="success" id="success">Your Message Successfully Sent!</div>
+    <div class="alert" id="alert">Input Fields Can't be Empty!</div>
+  </div>
+          </div>
+          
+  </div>
+  
+
+  
+
+<!-- sign up section -->
+
+<div id="signupcontainer">
+
+  <div class="signup">
+  <h2>Signup</h2>
+  <div id="errorContainer" class="error-messages">
+  <p id="error-message"></p>
+  </div>
+  <form id="signupform">
+    <div>
+      <label for="firstname-input"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></label>
+      <input type="text" name="firstname" id="firstname-input" placeholder="Firstname">
+    </div>
+    <div>
+      <label for="email-input">
+        <i class="fas fa-envelope"></i>
+      </label>
+      <input type="email" name="email" id="email-input" placeholder="Email">
+    </div>
+    <div>
+      <label for="password-input"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg></label>
+      <input type="password" name="password" id="password-input" placeholder="Password">
+    </div>
+    <div>
+      <label for="re-enter-password-input"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg></label>
+      <input type="password" name="password" id="re-enter-password-input" placeholder="Re-enter-Password">
+    </div>
+    <button type="submit">Signup</button>
+  </form>
+  <p id="login"> Already have an Account? <a href="#signinform">Login</a></p>
+  <div id="login-link-container"></div>
+</div>
+</div>
+</div>
+              <!-- Footer Section -->
+               
+    <footer>Copyright © Code Noobie 2025
+    
+          <a href="facebook_link"><i class="fab fa-facebook"></i></a>
+          <a href="instagram_link"><i class="fab fa-instagram"></i></a>
+          <a href="twitter_link"><i class="fab fa-twitter"></i></a>
+          <a href="skype_link"><i class="fab fa-skype"></i></a>
+      
+        </footer>
+
+  </body>
+</html>
