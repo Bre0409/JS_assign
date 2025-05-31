@@ -133,10 +133,3 @@ function showSuccessMessage() {
   loginLinkContainer.appendChild(loginLink);
 }
 
-
-
-//  // Hide signup form and the "already have an account" paragraph
-//   signupform.style.display = 'none';
-//   if (alreadyAccount) {
-//     alreadyAccount.style.display = 'none';
-//   }

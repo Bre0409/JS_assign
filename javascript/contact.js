@@ -44,60 +44,7 @@ options.forEach(option =>{
 });
 });
 
-        // Form Submission
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const form = document.getElementById("contact-form");
-
-//   form.addEventListener("submit", function (event) {
-//     event.preventDefault(); // Stop default form submission
-
-//     const firstName = document.getElementById("first-name-input").value.trim();
-//     const message = document.getElementById("message").value.trim();
-
-//     if (firstName === "") {
-//       alert("First name is required.");
-//       return;
-//     }
-
-//     if (message === "") {
-//       alert("Message is required.");
-//       return;
-//     }
-
-//     // Everything is valid
-//     alert("Form submitted successfully!");
-//     // Optional: form.submit(); // If you want to proceed with submission
-//   });
-// });
-
-        // Form Submission
-
-// function messages(){
-//   let name = document.getElementById('first-name-input');
-//   let email = document.getElementById('email-contact');
-//   let msg = document.getElementById('message');
-//   const success = document.getElementById('success');
-//   const alert = document.getElementById('alert');
-
-// if(name.value === '' || email.value === '' || msg.value === ''){
-//   alert.style.display = 'block';
-// }
-// else{
-//   setTimeout(() => {
-//     name.value = '';
-//     email.value = '';
-//     msg.value = '';
-//   }, 2000);
-
-//     success.style.display ='block';
-// }
-
-// setTimeout(() => {
-//   alert.style.display = 'none';
-//   success.style.display = 'none';
-// }, 4000);
-// }
+        // Form Validation
 
 function messages(event) {
   event.preventDefault(); // Prevent form submission
@@ -152,3 +99,61 @@ function messages(event) {
   // Reset custom dropdown to default (Pick Query)
   selectedElement.textContent = 'Pick Query';
 }
+
+
+            // Ideas I tried 
+
+        // Form Submission
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const form = document.getElementById("contact-form");
+
+//   form.addEventListener("submit", function (event) {
+//     event.preventDefault(); // Stop default form submission
+
+//     const firstName = document.getElementById("first-name-input").value.trim();
+//     const message = document.getElementById("message").value.trim();
+
+//     if (firstName === "") {
+//       alert("First name is required.");
+//       return;
+//     }
+
+//     if (message === "") {
+//       alert("Message is required.");
+//       return;
+//     }
+
+//     // Everything is valid
+//     alert("Form submitted successfully!");
+//     // Optional: form.submit(); // If you want to proceed with submission
+//   });
+// });
+
+        // Form Submission
+
+// function messages(){
+//   let name = document.getElementById('first-name-input');
+//   let email = document.getElementById('email-contact');
+//   let msg = document.getElementById('message');
+//   const success = document.getElementById('success');
+//   const alert = document.getElementById('alert');
+
+// if(name.value === '' || email.value === '' || msg.value === ''){
+//   alert.style.display = 'block';
+// }
+// else{
+//   setTimeout(() => {
+//     name.value = '';
+//     email.value = '';
+//     msg.value = '';
+//   }, 2000);
+
+//     success.style.display ='block';
+// }
+
+// setTimeout(() => {
+//   alert.style.display = 'none';
+//   success.style.display = 'none';
+// }, 4000);
+// }
