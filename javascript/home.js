@@ -60,8 +60,8 @@ function login() {
   }
 
   // password length check
-  if (passwordInput.length < 6) {
-    resultDiv.textContent = 'Password must be at least 6 characters.';
+  if (passwordInput.length < 8) {
+    resultDiv.textContent = 'Password must be at least 8 characters.';
     resultDiv.style.color = 'red';
     return;
   }
