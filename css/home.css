@@ -227,11 +227,11 @@ header li:first-child {
 .loginbut:hover {
   color: linear-gradient(to right, #0066ff, #ff32d6);
   scale: 1.2;
-  background: url(../Images/matrix2.gif);
+  background: url(../Images/matrix3.gif);
 }
 
 #signinform p {
-  color: white;
+  color: white; 
 }
 
 #signinform .link {
