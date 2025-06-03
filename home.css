@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(../Images/hacker-man.gif);
+  background-image: url(./Images/hacker-man.gif);
   min-height: 100vh;
   background-size: 94%;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ header li:first-child {
 .main {
   /* border: 2px solid yellow; */
   animation: fadeIn 3s ease-in;
-  background-image: url(../Images/1.jpg);
+  background-image: url(./Images/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -227,7 +227,7 @@ header li:first-child {
 .loginbut:hover {
   color: linear-gradient(to right, #0066ff, #ff32d6);
   scale: 1.2;
-  background: url(../Images/matrix2.gif);
+  background: url(./Images/matrix2.gif);
 }
 
 #signinform p {

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url(../Images/matrix1.gif);
+  background: url(./Images/matrix1.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -35,7 +35,7 @@ header {
   height: 56%;
   width: 80%;
   margin-top: 250px;
-  background: url(../Images/matrix1.gif);
+  background: url(./Images/matrix1.gif);
   color: rgba(0, 0, 0, 0);
   border: #fff solid 1px;
   border-radius: 15px;
@@ -84,7 +84,7 @@ h1 a {
   width: 80%;
   margin-top: 250px;
   background-color: #fff;
-  background: url(../Images/matrix1.gif);
+  background: url(./Images/matrix1.gif);
   color: rgba(0, 0, 0, 0);
   border: #fff solid 1px;
   border-radius: 15px;
@@ -105,7 +105,7 @@ h1 a {
   width: 80%;
   margin-top: 250px;
   background-color: #fff;
-  background: url(../Images/matrix1.gif);
+  background: url(./Images/matrix1.gif);
   color: rgba(0, 0, 0, 0);
   border: #fff solid 1px;
   border-radius: 15px;
@@ -132,7 +132,7 @@ button a {
   text-decoration: none;
 }
 .bluebutton {
-  background: url(../Images/blue.jpg);
+  background: url(./Images/blue.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 100px;
@@ -142,7 +142,7 @@ button a {
   border-radius: 80px;
 }
 .redbutton {
-  background: url(../Images/red.jpg);
+  background: url(./Images/red.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 100px;
