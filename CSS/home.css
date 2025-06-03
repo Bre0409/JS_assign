@@ -1,6 +1,6 @@
-@import "css/about.css";
-@import "css/contact.css";
-@import "css/signup.css";
+@import url("about.css");
+@import url("contact.css");
+@import url("signup.css");
 /* @media(max-width: 1600px){ */
 * {
   margin: 0;
