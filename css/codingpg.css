@@ -167,7 +167,6 @@ h1:hover a{
   .boxes {
     justify-items: center;
     grid-template-columns: none;
-    border: 2px solid rgb(212, 255, 0);
     margin: auto;
     margin-bottom: 100px;
   }
